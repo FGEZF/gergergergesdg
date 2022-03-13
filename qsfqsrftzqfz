@@ -76,6 +76,13 @@ w1:Button(
 ) -- Text, Callback
 
 w1:Button(
+    "Delete Dex Explorer",
+    function()
+        game.Players.LocalPlayer.PlayerGui.Dex:Remove()
+    end
+) -- Text, Callback
+
+w1:Button(
     "Collect All Loots",
     function()
         for i, v in next, game:GetService("Workspace").CurrentMap.Loot:GetDescendants() do
