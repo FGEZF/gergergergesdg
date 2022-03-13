@@ -69,6 +69,13 @@ game.Players.LocalPlayer.PlayerGui.ScreenGui:Remove()
 ) -- Text, Callback
 
 w1:Button(
+    "Dex Explorer",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/WeLikesDogs/fdsgfsdgds/main/dsgsdgd"))();
+    end
+) -- Text, Callback
+
+w1:Button(
     "Collect All Loots",
     function()
         for i, v in next, game:GetService("Workspace").CurrentMap.Loot:GetDescendants() do
