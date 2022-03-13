@@ -1,0 +1,116 @@
+local library = loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/0x"))()
+
+local w1 = library:Window("STK MOD PANEL") -- Text
+
+w1:Button(
+    "Escape Yourself",
+    function()
+        sethiddenproperty(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,"CFrame",game:GetService("Workspace").CurrentMap.ExitDoor.GlowFront.CFrame)
+    end
+) -- Text, Callback
+
+w1:Button(
+    "Kill Panel",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DodgeTyl/ngfnfg/main/bfhbfdhb"))();
+    end
+) -- Text, Callback
+
+w1:Button(
+    "Destroy Kill Panel",
+    function()
+        game.CoreGui.h:Destroy()
+    end
+) -- Text, Callback
+
+w1:Button(
+    "Remove Music",
+    function()
+        game.ReplicatedStorage.LibraryResources.SoundFXResources:Destroy()
+    end
+) -- Text, Callback
+
+w1:Button(
+    "Disable Reanimations",
+    function()
+        game.Players.LocalPlayer.Character.KnifeAttachment:Remove()
+        game.Players.LocalPlayer.Character.Head:Remove()
+        game.Players.LocalPlayer.Character.Shirt:Remove()
+        game.Players.LocalPlayer.Character.Pants:Remove()
+        game.Players.LocalPlayer.Character.Animate:Remove()
+        game.Players.LocalPlayer.Character.LeftUpperArm:Remove()
+        game.Players.LocalPlayer.Character.RightUpperArm:Remove()
+        game.Players.LocalPlayer.Character.LeftUpperLeg:Remove()
+        game.Players.LocalPlayer.Character.RightUpperLeg:Remove()
+        game.Players.LocalPlayer.Character.Head:Remove()
+    end
+) -- Text, Callback
+
+w1:Button(
+    "Freecam (P Toggle)",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DodgeTyl/test/main/hyugghguyihui"))();
+    end
+) -- Text, Callback
+
+w1:Button(
+    "Spectate Menu",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DodgeTyl/vdvgsdg/main/fesfgsef"))();
+    end
+) -- Text, Callback
+
+w1:Button(
+    "Delete Spectate Menu",
+    function()
+        game.Players.LocalPlayer.PlayerGui.ScreenGui:Remove()
+game.Players.LocalPlayer.PlayerGui.ScreenGui:Remove()
+    end
+) -- Text, Callback
+
+w1:Button(
+    "Collect All Loots",
+    function()
+        for i, v in next, game:GetService("Workspace").CurrentMap.Loot:GetDescendants() do
+  if v.Name:match("LootProxBlock") then
+      sethiddenproperty(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,"CFrame",v.CFrame)
+      wait(.2)
+      for i=1,2 do wait()
+          game:GetService("VirtualInputManager"):SendKeyEvent(true, "E", false, game)
+       end
+   end
+end
+    end
+) -- Text, Callback
+
+w1:Slider(
+    "WalkSpeed",
+    "WS",
+    16,
+    300,
+    function(value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+    end
+) -- Text, Flag, Minimum, Maximum, Callback, Default (Optional), Flag Location (Optional)
+
+w1:Toggle(
+    "Freeze/FakeLag",
+    "frz",
+    false,
+    function(toggled)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = toggled
+    end
+) -- Text, Flag, Enabled, Callback, Flag Location (Optional)
+
+w1:Button(
+    "Destroy GUI",
+    function()
+        for i, v in pairs(game.CoreGui:GetChildren()) do
+            if v:FindFirstChild("Top") then
+                v:Destroy()
+            end
+        end
+    end
+) -- Text, Callback
+
+w1:Label("We Likes Dogs") -- Text
