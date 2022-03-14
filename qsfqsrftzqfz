@@ -83,6 +83,20 @@ w1:Button(
 ) -- Text, Callback
 
 w1:Button(
+    "ESP",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FGEZF/fggfegef/main/sfesfsef"))();
+    end
+) -- Text, Callback
+
+w1:Button(
+    "Delete ESP Panel",
+    function()
+        game.CoreGui.MODesp:Remove()
+    end
+) -- Text, Callback
+
+w1:Button(
     "Collect All Loots",
     function()
         for i, v in next, game:GetService("Workspace").CurrentMap.Loot:GetDescendants() do
@@ -94,6 +108,13 @@ w1:Button(
        end
    end
 end
+    end
+) -- Text, Callback
+
+w1:Button(
+    "Refresh Character",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FGEZF/gvrdgerg/main/gdrgdg"))();
     end
 ) -- Text, Callback
 
