@@ -37,7 +37,7 @@ w1:Button(
 w1:Button(
     "🎵 Remove Music 🎵",
     function()
-        game.ReplicatedStorage.LibraryResources.SoundFX:Destroy()
+        game.ReplicatedStorage.LibraryResources.SoundFXFolder:Destroy()
     end
 ) -- Text, Callback
 
@@ -59,7 +59,7 @@ end
 ) -- Text, Callback
 
 w1:Button(
-    "🤖 RESET GRAPHICS QUALITY 🤖",
+    "🤖 RESET GRAPHICS 🤖",
     function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/FGEZF/fefgsf/main/sdftr"))();
     end
