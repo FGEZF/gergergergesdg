@@ -1,0 +1,146 @@
+local library = loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/0x"))()
+
+local w1 = library:Window("STK MOD PANEL") -- Text
+
+w1:Button(
+    "🚪 Servers List Panel 🚪",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FGEZF/feztrez/main/fgegege"))();
+    end
+) -- Text, Callback
+
+w1:Button(
+    "🚪 Close Servers Panel🚪",
+    function()
+        game.CoreGui.ServerBrowser:Destroy()
+    end
+) -- Text, Callback
+
+w1:Button(
+    "🚪 Escape Yourself 🚪",
+    function()
+        sethiddenproperty(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,"CFrame",game:GetService("Workspace").CurrentMap.ExitDoor.GlowFront.CFrame)
+    end
+) -- Text, Callback
+
+w1:Button(
+    "🚪 Bind ShiftLock To Ctrl 🚪",
+    function()
+        repeat wait() until game:IsLoaded()
+--game:GetService("Players").0e4k.PlayerScripts.PlayerModule.CameraModule.MouseLockController.BoundKeys
+local keys = game.Players.LocalPlayer.PlayerScripts.PlayerModule.CameraModule.MouseLockController:WaitForChild("BoundKeys")
+local Key = "LeftControl" -- Customizable Key
+keys.Value = Key
+    end
+) -- Text, Callback
+
+w1:Button(
+    "🩸 Kill Panel 🩸",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DodgeTyl/ngfnfg/main/bfhbfdhb"))();
+    end
+) -- Text, Callback
+
+w1:Button(
+    "🩸 Destroy Kill Panel 🩸",
+    function()
+        game.CoreGui.h:Destroy()
+    end
+) -- Text, Callback
+
+w1:Button(
+    "🎵 Remove Music 🎵",
+    function()
+        game.ReplicatedStorage.LibraryResources.SoundFXResources.SoundFXFolder.ForestAmbient:Destroy()
+        game.ReplicatedStorage.LibraryResources.SoundFXResources.SoundFXFolder.Ambient:Destroy()
+        game.ReplicatedStorage.LibraryResources.SoundFXResources.SoundFXFolder.ExitMusicOLD:Destroy()
+        game.ReplicatedStorage.LibraryResources.SoundFXResources.SoundFXFolder.ExitMusic:Destroy()
+        game.ReplicatedStorage.LibraryResources.SoundFXResources.SoundFXFolder.CampFire:Destroy()
+        game.ReplicatedStorage.LibraryResources.SoundFXResources.SoundFXFolder.DefaultKillerProximity:Destroy()
+    end
+) -- Text, Callback
+
+w1:Button(
+    "🤖 Toggle RTX (Low End) 🤖",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FGEZF/gregzeg/main/fesfesdf"))();
+    end
+) -- Text, Callback
+
+w1:Button(
+    "🤖 Toggle RTX2 (Low End) 🤖",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FGEZF/gregzeg/main/fesfesdf"))();
+        wait(1)
+        for _, child in pairs(game.Lighting:GetChildren()) do
+child:Destroy()
+end
+    end
+) -- Text, Callback
+
+w1:Button(
+    "🤖 RESET GRAPHICS 🤖",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FGEZF/fefgsf/main/sdftr"))();
+    end
+) -- Text, Callback
+
+w1:Button(
+    "☢️ Disable Reanimations ☢️ ",
+    function()
+        game.Players.LocalPlayer.Character.KnifeAttachment:Remove()
+        game.Players.LocalPlayer.Character.Head:Remove()
+        game.Players.LocalPlayer.Character.Shirt:Remove()
+        game.Players.LocalPlayer.Character.Pants:Remove()
+        game.Players.LocalPlayer.Character.Animate:Remove()
+        game.Players.LocalPlayer.Character.LeftUpperArm:Remove()
+        game.Players.LocalPlayer.Character.RightUpperArm:Remove()
+        game.Players.LocalPlayer.Character.LeftUpperLeg:Remove()
+        game.Players.LocalPlayer.Character.RightUpperLeg:Remove()
+        game.Players.LocalPlayer.Character.Head:Remove()
+    end
+) -- Text, Callback
+
+w1:Slider(
+    "🦵 WalkSpeed 🦵",
+    "WS",
+    16,
+    300,
+    function(value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+    end
+) -- Text, Flag, Minimum, Maximum, Callback, Default (Optional), Flag Location (Optional)
+
+w1:Toggle(
+    "🦼 Freeze/FakeLag 🦼",
+    "frz",
+    false,
+    function(toggled)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = toggled
+    end
+) -- Text, Flag, Enabled, Callback, Flag Location (Optional)
+
+w1:Button(
+    "🕶 Page 2🕶",
+    function()
+        for i, v in pairs(game.CoreGui:GetChildren()) do
+            if v:FindFirstChild("Top") then
+                v:Destroy()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/FGEZF/P2/main/P2"))()
+            end
+        end
+    end
+) -- Text, Callback
+
+w1:Button(
+    "🕶 Destroy GUI 🕶",
+    function()
+        for i, v in pairs(game.CoreGui:GetChildren()) do
+            if v:FindFirstChild("Top") then
+                v:Destroy()
+            end
+        end
+    end
+) -- Text, Callback
+
+w1:Label("🐕 We Likes Dogs 🐕") -- Text
