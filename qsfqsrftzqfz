@@ -129,7 +129,7 @@ w1:Button(
             end
         end
     end
-    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FGEZF/P2/main/P2"))()
 ) -- Text, Callback
 
 w1:Button(
